@@ -3,6 +3,7 @@ import Header from "../components/Header.js";
 import ErrorPage from "../pages/ErrorPage.js";
 import HomePage from "../pages/HomePage.js";
 import AboutPage from "../pages/AboutPage.js";
+import ApartmentPage from "../pages/ApartmentPage.js";
 // import Footer from "../components/Footer.js";
 // import Banner from "../components/Banner.js";
 
@@ -16,7 +17,7 @@ export const router = createBrowserRouter([
     path: "/apartment/",
     element: (
       <>
-        <Header />
+        <ApartmentPage />
       </>
     ),
   },
