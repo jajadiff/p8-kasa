@@ -1,0 +1,27 @@
+.error {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        margin-top: 0;
+        font-size: 15vw;
+        font-weight: 700;
+        color: $color-primaire;
+        margin-bottom: 0;
+    }
+
+    &__txt {
+        font-weight: 500;
+        color: $color-primaire;
+        margin-bottom: 9rem;
+        text-align: center;
+    }
+
+    &__link {
+        color: $color-primaire;
+    }
+
+}
