@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+
+    &__logo {
+        img {
+            // min-width: 70%;
+            height: 60%;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        padding-top: 1rem;
+        font-size: 16px;
+        gap: 2rem;
+        font-weight: 500;
+
+
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-primaire;
+
+        &.active {
+            text-decoration: underline;
+        }
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        &__logo {
+            img {
+                // height: 45px;
+                height: 35px;
+            }
+        }
+
+        &__list {
+            font-size: 12px;
+            padding: 0;
+            gap: 1rem;
+        }
+    }
+}
