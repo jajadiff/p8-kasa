@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-import Header from "../components/Header.js";
 import ErrorPage from "../pages/ErrorPage.js";
 import HomePage from "../pages/HomePage.js";
 import AboutPage from "../pages/AboutPage.js";
@@ -14,7 +13,8 @@ export const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/apartment/*",
+    /* Récupérer l'id = :id */
+    path: "/apartment/:id",
     element: (
       <>
         <ApartmentPage />
