@@ -1,1 +1,120 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+body {
+  max-width: 1440px;
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.error {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.error__title {
+  margin-top: 0;
+  font-size: 15vw;
+  font-weight: 700;
+  color: #FF6060;
+  margin-bottom: 0;
+}
+.error__txt {
+  font-weight: 500;
+  color: #FF6060;
+  margin-bottom: 9rem;
+  text-align: center;
+}
+.error__link {
+  color: #FF6060;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+.header__logo img {
+  height: 60%;
+}
+.header__list {
+  list-style: none;
+  display: flex;
+  padding-top: 1rem;
+  font-size: 16px;
+  gap: 2rem;
+  font-weight: 500;
+}
+.header a {
+  text-decoration: none;
+  color: #FF6060;
+}
+.header a.active {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .header__logo img {
+    height: 35px;
+  }
+  .header__list {
+    font-size: 12px;
+    padding: 0;
+    gap: 1rem;
+  }
+}
+.footer {
+  justify-content: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+.footer__logo {
+  margin-top: 3rem;
+}
+.footer__txt {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .footer__txt {
+    font-size: 12px;
+  }
+}
+.banner {
+  background-size: cover;
+  display: flex;
+  height: 210px;
+  width: 90%;
+  -o-object-fit: center;
+     object-fit: center;
+  background-position: 50%;
+  border-radius: 25px;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+.banner__txt {
+  color: white;
+  font-weight: 500;
+  font-size: 48px;
+  padding-left: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    height: 150px;
+  }
+  .banner__txt {
+    font-size: 24px;
+    width: 77%;
+    padding: 0;
+  }
+}/*# sourceMappingURL=main.css.map */
