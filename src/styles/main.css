@@ -178,4 +178,34 @@ body {
   .container__card {
     width: 100%;
   }
+}
+.carrousel {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.carrousel__slide {
+  width: 90%;
+  max-height: 415px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+
+.arrow {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+}
+.arrow__right {
+  min-width: 3vw;
+  position: absolute;
+  right: 0.5rem;
+  transform: rotate(90deg);
+}
+.arrow__left {
+  min-width: 3vw;
+  position: absolute;
+  left: 0.5rem;
+  transform: rotate(-90deg);
 }/*# sourceMappingURL=main.css.map */
