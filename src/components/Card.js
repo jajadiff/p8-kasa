@@ -10,14 +10,24 @@ function Card() {
   }));
   return (
     <main className="container">
-      {cardDatas.map((cardData) => (
-        <Link to={`/apartment/${cardData.title} `} key={cardData.key}>
-          <article className="container__card">
-            <img src={cardData.cover} alt={cardData.title} />
-            <h2 className="container__title">{cardData.title}</h2>
-          </article>
-        </Link>
-      ))}
+      <div className="container__grid">
+        {cardDatas.map((cardData) => (
+          <Link
+            to={`/apartment/${cardData.title} `}
+            key={cardData.key}
+            className="container__link"
+          >
+            <article className="container__card">
+              <img
+                src={cardData.cover}
+                alt={cardData.title}
+                className="container__img container__card"
+              />
+              <h2 className="container__title">{cardData.title}</h2>
+            </article>
+          </Link>
+        ))}
+      </div>
     </main>
   );
 }
