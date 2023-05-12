@@ -1,0 +1,110 @@
+.apartment {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 1rem;
+
+    &__title {
+        margin: 0;
+        font-size: 36px;
+        color: $color-primaire;
+        font-weight: 500;
+    }
+
+    &__location {
+        margin-top: 0.5rem;
+        font-size: 18px;
+        color: $color-primaire;
+        font-weight: 500;
+
+    }
+
+}
+
+.tag {
+    display: flex;
+    gap: 1rem;
+
+    &__item {
+        margin-top: 0;
+        font-size: 14px;
+        color: white;
+        background-color: $color-primaire;
+        padding: 0.3rem 1.5rem;
+        border-radius: 10px;
+        font-weight: 500;
+    }
+}
+
+.host {
+    display: flex;
+
+    &__name {
+        width: 80px;
+        display: inline-block;
+        word-break: break-word;
+        text-align: end;
+        font-size: 18px;
+        font-weight: 500;
+        color: $color-primaire;
+        padding-right: 10px;
+    }
+
+    &__picture {
+        border-radius: 50%;
+        object-fit: cover;
+        width: 64px;
+        height: 64px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .apartment {
+        flex-direction: column;
+
+        &__title {
+            font-size: 18px;
+        }
+
+        &__location {
+            font-size: 14px;
+        }
+    }
+
+    .tag {
+        gap: 5px;
+        flex-wrap: wrap;
+
+        &__item {
+            font-size: 10px;
+            padding: 0.3rem 0.8rem;
+        }
+
+    }
+
+    .host {
+        &__name {
+            font-size: 12px;
+        }
+
+        &__picture {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    .spacebetween {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        &__star {
+            width: 13px;
+            height: 13px;
+        }
+    }
+
+}
