@@ -5,9 +5,16 @@
 
     &__slide {
         width: 90%;
-        max-height: 415px;
+        height: 415px;
         object-fit: cover;
         border-radius: 25px;
+    }
+
+    &__counter {
+        position: absolute;
+        bottom: 2rem;
+        color: white;
+        font-weight: 500;
     }
 
 }
@@ -23,6 +30,7 @@
         position: absolute;
         right: 0.5rem;
         transform: rotate(90deg);
+        cursor: pointer;
     }
 
     &__left {
@@ -30,5 +38,18 @@
         position: absolute;
         left: 0.5rem;
         transform: rotate(-90deg);
+        cursor: pointer;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .carrousel__slide {
+        max-height: 215px;
+    }
+    .carrousel__counter {
+      display: none;
     }
 }
