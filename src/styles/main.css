@@ -226,6 +226,11 @@ body {
     display: none;
   }
 }
+.container__apartment {
+  display: flex;
+  flex-direction: column;
+}
+
 .apartment {
   width: 90%;
   display: flex;
@@ -282,6 +287,46 @@ body {
   margin: auto;
 }
 
+.togglecontainer {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.togglecontainer__description {
+  width: 45%;
+}
+.togglecontainer__description h2 {
+  font-size: 18px;
+}
+.togglecontainer__description p {
+  margin: 0;
+  border-radius: 10px;
+  background-color: #F6F6F6;
+  padding: 2rem 1rem;
+  font-size: 18px;
+  color: #FF6060;
+}
+.togglecontainer__equipements {
+  width: 45%;
+}
+.togglecontainer__equipements h2 {
+  font-size: 18px;
+}
+.togglecontainer__equipements ul {
+  border-radius: 10px;
+  background-color: #F6F6F6;
+  margin: 0;
+  padding: 2rem 1rem;
+  list-style: none;
+}
+.togglecontainer__equipements ul li {
+  font-size: 18px;
+  color: #FF6060;
+}
+
 @media screen and (max-width: 600px) {
   .apartment {
     flex-direction: column;
@@ -315,5 +360,69 @@ body {
   .spacebetween__star {
     width: 13px;
     height: 13px;
+  }
+  .togglecontainer {
+    flex-direction: column;
+  }
+  .togglecontainer__description {
+    width: 100%;
+  }
+  .togglecontainer__description h2 {
+    font-size: 13px;
+  }
+  .togglecontainer__description p {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .togglecontainer__equipements {
+    width: 100%;
+  }
+  .togglecontainer__equipements h2 {
+    font-size: 13px;
+  }
+  .togglecontainer__equipements ul li {
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+.toggle__title {
+  background-color: #FF6060;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-size: 24px;
+  color: white;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.abouttoggle {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  width: 80%;
+  gap: 1rem;
+}
+.abouttoggle h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.abouttoggle p {
+  margin: 0;
+  border-radius: 10px;
+  background-color: #F6F6F6;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 2rem;
+  color: #FF6060;
+}
+
+@media screen and (max-width: 600px) {
+  .abouttoggle h2 {
+    font-size: 13px;
+  }
+  .abouttoggle p {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=main.css.map */
