@@ -27,6 +27,20 @@ function Carrousel(props) {
     }
   }
 
+  if (apartment.pictures.length === 1) {
+    return (
+      <div className="carrousel">
+        <img
+          src={apartment.pictures[actualSlide]}
+          className="carrousel__slide"
+        />
+        <span className="carrousel__counter">
+          {actualSlide + 1}/{apartment.pictures.length}
+        </span>
+      </div>
+    );
+  }
+
   return (
     <div className="carrousel">
       <img src={apartment.pictures[actualSlide]} className="carrousel__slide" />
