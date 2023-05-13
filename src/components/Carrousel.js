@@ -33,6 +33,7 @@ function Carrousel(props) {
         <img
           src={apartment.pictures[actualSlide]}
           className="carrousel__slide"
+          alt={`Slide-${actualSlide}`}
         />
         <span className="carrousel__counter">
           {actualSlide + 1}/{apartment.pictures.length}
@@ -43,10 +44,24 @@ function Carrousel(props) {
 
   return (
     <div className="carrousel">
-      <img src={apartment.pictures[actualSlide]} className="carrousel__slide" />
+      <img
+        src={apartment.pictures[actualSlide]}
+        className="carrousel__slide"
+        alt={`Slide-${actualSlide}`}
+      />
       <span className="arrow">
-        <img src={arrow} className="arrow__left" onClick={prevSlide} />
-        <img src={arrow} className="arrow__right" onClick={nextSlide} />
+        <img
+          src={arrow}
+          className="arrow__left"
+          onClick={prevSlide}
+          alt="Left Arrow"
+        />
+        <img
+          src={arrow}
+          className="arrow__right"
+          onClick={nextSlide}
+          alt="Right Arrow"
+        />
       </span>
       <span className="carrousel__counter">
         {actualSlide + 1}/{apartment.pictures.length}
