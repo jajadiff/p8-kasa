@@ -1,0 +1,37 @@
+.abouttoggle {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    width: 80%;
+    gap: 1rem;
+
+    h2 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    p {
+        margin: 0;
+        border-radius: 10px;
+        background-color: $color-secondaire;
+        font-size: 24px;
+        font-weight: 400;
+        padding: 2rem;
+        color: $color-primaire;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .abouttoggle {
+
+
+        h2 {
+            font-size: 13px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+}

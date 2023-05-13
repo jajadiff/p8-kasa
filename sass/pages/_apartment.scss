@@ -1,3 +1,8 @@
+.container__apartment {
+    display: flex;
+    flex-direction: column;
+}
+
 .apartment {
     width: 90%;
     display: flex;
@@ -60,6 +65,57 @@
     }
 }
 
+.togglecontainer {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+
+    &__description {
+        width: 45%;
+
+        h2 {
+
+            font-size: 18px;
+        }
+
+        p {
+            margin: 0;
+            border-radius: 10px;
+            background-color: $color-secondaire;
+            padding: 2rem 1rem;
+            font-size: 18px;
+            color: $color-primaire;
+
+        }
+    }
+
+    &__equipements {
+        width: 45%;
+
+        h2 {
+
+            font-size: 18px;
+        }
+
+        ul {
+            border-radius: 10px;
+            background-color: $color-secondaire;
+            margin: 0;
+            padding: 2rem 1rem;
+            list-style: none;
+
+            li {
+                font-size: 18px;
+                color: $color-primaire;
+            }
+        }
+    }
+}
+
+
 @media screen and (max-width: 600px) {
 
     .apartment {
@@ -104,6 +160,41 @@
         &__star {
             width: 13px;
             height: 13px;
+        }
+    }
+
+    .togglecontainer {
+        flex-direction: column;
+
+        &__description {
+            width: 100%;
+
+            h2 {
+                font-size: 13px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 12px;
+            }
+        }
+
+        &__equipements {
+            width: 100%;
+
+            h2 {
+                font-size: 13px;
+            }
+
+
+            ul {
+                li {
+                    font-weight: 400;
+                    font-size: 12px;
+                }
+            }
+
+
         }
     }
 
