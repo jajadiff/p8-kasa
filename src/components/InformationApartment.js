@@ -31,6 +31,7 @@ function InformationApartment(props) {
             key={`rating-${i}`}
             src={starColor}
             className="spacebetween__star"
+            alt={`rating-${i}`}
           />
         );
       } else {
@@ -39,6 +40,7 @@ function InformationApartment(props) {
             key={`rating-${i}`}
             src={starGrey}
             className="spacebetween__star"
+            alt={`rating-${i}`}
           />
         );
       }
@@ -64,7 +66,11 @@ function InformationApartment(props) {
           <div className="spacebetween">
             <div className="host">
               <p className="host__name">{apartment.host.name}</p>
-              <img src={apartment.host.picture} className="host__picture" />
+              <img
+                src={apartment.host.picture}
+                className="host__picture"
+                alt={apartment.host.name}
+              />
             </div>
             <p>{AddStar()}</p>
           </div>
