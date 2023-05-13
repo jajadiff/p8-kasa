@@ -12,7 +12,10 @@ function Toggle({ title, dropdown }) {
     <div>
       <h2 onClick={toggleOpen} className="toggle__title">
         {title}
-        <img src={arrow} />
+        <img
+          src={arrow}
+          className={`toggle__arrow ${isOpen ? "toggle__arrow--open" : ""}`}
+        />
       </h2>
       {isOpen && dropdown}
     </div>
