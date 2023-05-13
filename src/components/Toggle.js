@@ -14,6 +14,7 @@ function Toggle({ title, dropdown }) {
         {title}
         <img
           src={arrow}
+          alt="arrow"
           className={`toggle__arrow ${isOpen ? "toggle__arrow--open" : ""}`}
         />
       </h2>
