@@ -107,6 +107,8 @@ body {
   justify-content: center;
   margin: auto;
   align-items: center;
+  background-color: rgba(141, 141, 141, 0.7);
+  background-blend-mode: multiply;
 }
 .banner__txt {
   color: white;
