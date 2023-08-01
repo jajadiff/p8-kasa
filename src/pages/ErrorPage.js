@@ -9,7 +9,7 @@ function ErrorPage() {
         <p className="error__txt">
           Oups! La page que vous demandez n'existe pas.
         </p>
-        <Link to="/" className="error__link">
+        <Link to="/p8-kasa/" className="error__link">
           Retourner sur la page d'accueil
         </Link>
       </div>

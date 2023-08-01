@@ -13,7 +13,7 @@ function Card() {
       <div className="container__grid">
         {cardDatas.map((cardData) => (
           <Link
-            to={`/apartment/${cardData.key} `}
+            to={`/p8-kasa/apartment/${cardData.key} `}
             key={cardData.key}
             className="container__link"
           >

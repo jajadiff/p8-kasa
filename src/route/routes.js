@@ -7,9 +7,9 @@ import ApartmentPage from "../pages/ApartmentPage.js";
 const Router = () => {
   return (
     <Routes>
-      <Route path="/index" element={<HomePage />} />
-      <Route path="/apartment/:id" element={<ApartmentPage />} />
-      <Route path="/about" element={<AboutPage />} />
+      <Route path="/p8-kasa/" element={<HomePage />} />
+      <Route path="/p8-kasa/apartment/:id" element={<ApartmentPage />} />
+      <Route path="/p8-kasa/about" element={<AboutPage />} />
       <Route element={<ErrorPage />} />
     </Routes>
   );

@@ -6,11 +6,11 @@ function Navbar() {
     <nav>
       <ul className="header__list">
         <li>
-          <NavLink to="/index">ACCUEIL</NavLink>
+          <NavLink to="/p8-kasa/">ACCUEIL</NavLink>
         </li>
 
         <li>
-          <NavLink to="/about">A PROPOS</NavLink>
+          <NavLink to="/p8-kasa/about">A PROPOS</NavLink>
         </li>
       </ul>
     </nav>
