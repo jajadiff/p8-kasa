@@ -6,7 +6,7 @@ function Navbar() {
     <nav>
       <ul className="header__list">
         <li>
-          <NavLink to="/">ACCUEIL</NavLink>
+          <NavLink to="/index">ACCUEIL</NavLink>
         </li>
 
         <li>
